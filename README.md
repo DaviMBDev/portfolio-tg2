@@ -37,6 +37,7 @@ Profissionalmente, atuo no momento como estagiário na **Prefeitura Municipal**,
 
 ### Backend
 - Node.js
+- WebSockets / Socket.IO
 - Swagger
 - Postman
 - Curl
@@ -55,6 +56,7 @@ Profissionalmente, atuo no momento como estagiário na **Prefeitura Municipal**,
 - VirtualBox
 - Docker
 - Flyway
+- Jest
 
 ### Outros 
 - Pacote Office
@@ -258,6 +260,66 @@ O grande diferencial deste semestre foi trabalhar diretamente com um cliente ext
 </div>
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
   <img src="https://github.com/Bug-Busters-F/ClassiPy/blob/main/docs/gifs/gifSprint3.gif" alt="Home" width="65%">
+</div>
+
+---
+
+## 📱 ProDesk - 2026 - 1º Semestre
+
+## Empresa Parceira  
+Nossa parceira cliente neste projeto foi a **Pro4tech**, empresa especializada no fornecimento e consultoria de soluções tecnológicas e serviços corporativos de TI, representada pelos pontos focais **Rafael Monteiro** e **Larissa Souza**.
+
+## Problema  
+Empresas prestadoras de serviços de tecnologia e suporte enfrentam recorrentes gargalos na organização, triagem e encaminhamento de chamados. A ausência de um sistema centralizado e dinâmico de atendimento costuma resultar em atendimentos iniciados sem a devida classificação, gerando retrabalho, lentidão na resolução de problemas críticos e sobrecarga de determinadas equipes técnicas. Além disso, a falta de um histórico estruturado de interações e de métricas precisas inviabiliza o acompanhamento em tempo real das demandas e dificulta o escalonamento ágil de chamados para os níveis técnicos adequados (N1, N2, etc.).
+
+## Solução  
+Para solucionar essas dores, concebemos e desenvolvemos o **ProDesk**, uma plataforma mobile de Help Desk e Service Desk corporativo projetada para modernizar e agilizar o suporte em TI. A aplicação centraliza todo o fluxo de atendimento em uma interface móvel intuitiva, integrando triagem automatizada com processamento de linguagem natural (NLP), comunicação em tempo real via chat estruturado com WebSockets (Socket.IO), esteira de escalonamento multinível entre setores técnicos e acompanhamento de métricas operacionais para gestores e administradores.
+
+## 🔗 Repositório  
+- [ProDesk (Repositório Principal)](https://github.com/Bug-Busters-F/ProDesk)
+- [ProDesk Backend](https://github.com/Bug-Busters-F/ProDesk-backend)
+- [ProDesk Mobile](https://github.com/Bug-Busters-F/ProDesk-appMobile)
+
+## Tecnologias Utilizadas  
+- **Nest.js e TypeScript** – Framework modular em Node.js utilizado para estruturar a API REST e os gateways de comunicação em tempo real com tipagem forte e injeção de dependências.
+- **WebSockets e Socket.IO** – Protocolo e tecnologia adotados para prover a troca bidirecional de mensagens em tempo real e de baixa latência no chat de atendimento.
+- **MongoDB e Mongoose** – Banco de dados NoSQL orientado a documentos e ODM para persistência flexível e performática de chamados, mensagens de chat e categorias.
+- **React Native e Expo** – Desenvolvimento da aplicação móvel multiplataforma com NativeWind e Tailwind CSS, garantindo interface ágil e responsiva.
+- **Node-NLP** – Biblioteca de processamento de linguagem natural aplicada na triagem inteligente e categorização automática das descrições dos chamados.
+- **JWT (JSON Web Tokens) e Passport** – Estruturação da segurança e autenticação baseada em perfis de acesso (Cliente, Atendente e Administrador), inclusive na validação de handshake dos WebSockets.
+- **Jest** – Framework de testes automatizados aplicado na cobertura de testes unitários para gateways e camadas de serviço.
+- **Docker e Docker Compose** – Padronização de contêineres e paridade de ambientes de desenvolvimento.
+- **Swagger** – Documentação interativa e padronizada das rotas da API.
+
+## Contribuições Pessoais  
+Neste projeto, atuei com dedicação integral ao backend da aplicação, sendo o principal responsável pela infraestrutura de comunicação em tempo real e pelas regras de atendimento técnico do sistema:
+
+- **Módulo de Chat em Tempo Real com WebSockets**: Arquitetei e implementei integralmente o módulo de chat (`ChatModule`, `ChatGateway`, `ChatService`, `ChatRepository` e schemas Mongoose). Integrei o Socket.IO ao Nest.js, implementando conexão com autenticação no handshake via JWT, gestão dinâmica de salas (*rooms*) isoladas por chamado (`ticketId`), troca assíncrona de mensagens e persistência de histórico de conversas no MongoDB.
+- **Segurança e Isolamento de Sessões de Chat**: Implementei regras estritas de autorização e visibilidade do chat (*"apenas o atendente designado e o cliente solicitante têm acesso à conversa"*), assegurando que terceiros não acessem conversas confidenciais de suporte nem emitam eventos de mensagens indevidos.
+- **Escalonamento de Chamados (Ticket Escalation)**: Desenvolvi os casos de uso para escalonamento de chamados (`escalate.usecase.ts` e `newAgent.usecase.ts`), permitindo que chamados não resolvidos sejam reatribuídos entre níveis de suporte (ex.: N1 para N2) e direcionados para novos atendentes e categorias com consistência transacional.
+- **Testes Automatizados e Documentação de Integração**: Desenvolvi uma robusta suíte de testes unitários com Jest cobrindo extensivamente a camada de aplicação e o gateway de WebSockets (`chat.service.spec.ts` e `chat.gateway.spec.ts`, superando 600 linhas de testes automatizados). Além disso, escrevi o guia técnico de integração (`frontend_integration_guide.md`), orientando com clareza o time de mobile sobre o ciclo de vida dos eventos e o protocolo de conexão do chat.
+
+## Hard Skills  
+
+| Habilidade | Descrição | Nível de Proficiência |
+|-------------|------------|-----------------------|
+| **Nest.js + TypeScript** | Construção de API REST modular, gateways de comunicação e injeção de dependências. | Prático |
+| **WebSockets + Socket.IO** | Arquitetura de mensageria em tempo real, gerenciamento de salas (rooms) e handshake com JWT. | Prático |
+| **MongoDB + Mongoose** | Modelagem orientada a documentos NoSQL, schemas e persistência de histórico de conversas. | Prático |
+| **Testes Automatizados (Jest)** | Cobertura de testes unitários para fluxos de WebSockets, serviços e regras de escalonamento. | Prático |
+| **Git + GitHub** | Trabalho colaborativo via pull requests, revisões de código e padronização de commits. | Proficiente |
+| **Scrum + Metodologias Ágeis** | Planejamento e entrega incremental de histórias de usuário em sprints com Jira. | Proficiente |
+
+## 💬 Soft Skills  
+O desenvolvimento de um módulo em tempo real (chat via WebSockets) para um aplicativo mobile multiusuário demandou **Comunicação Técnica Assertiva** e **Trabalho em Equipe Interdisciplinar**. Para viabilizar a conexão entre o backend em Nest.js e o frontend em React Native sem ruídos, tomei a iniciativa de documentar detalhadamente o contrato de eventos e payloads no guia de integração, garantindo clareza e autonomia para os desenvolvedores mobile. Além disso, o diagnóstico e a correção de falhas de concorrência e desconexões de sockets exercitaram minha **Capacidade Analítica e Resolução de Problemas** sob prazos de entrega rigorosos, assegurando estabilidade para a validação das funcionalidades junto aos pontos focais da Pro4tech.
+
+## Demonstração do Projeto
+
+<div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
+  <!-- Adicionar demonstrações / GIFs da Sprint 1 e 2 aqui -->
+</div>
+<div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
+  <!-- Adicionar demonstrações / GIFs da Sprint 3 aqui -->
 </div>
 
 ---
