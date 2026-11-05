@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Olá! Sou o Davi Miyake Batista, um profissional fortemente interessado por tecnologia e fascinado por suas diversas vertentes. Escolhi cursar **Análise e Desenvolvimento de Sistemas** na **FATEC de São José dos Campos** devido à forte reputação da instituição no mercado tecnológico e à sua metodologia de ensino focada na prática (como a Aprendizagem por Projetos Integrados), o que considero essencial para uma formação técnica sólida. Atualmente estou no 5º (e penúltimo) semestre.
+Olá! Sou o Davi Miyake Batista, um profissional fortemente interessado por tecnologia e fascinado por suas diversas vertentes. Escolhi cursar **Análise e Desenvolvimento de Sistemas** na **FATEC de São José dos Campos** devido à forte reputação da instituição no mercado tecnológico e à sua metodologia de ensino focada na prática (como a Aprendizagem por Projetos Integrados), o que considero essencial para uma formação técnica sólida. Atualmente estou no 6º (e último) semestre.
 
 Além da minha graduação em andamento, possuo formação como **Técnico em Redes de Computadores** pelo **SENAI de São José dos Campos**, concluída no primeiro semestre de 2023. Essa sólida base em infraestrutura, aliada aos meus estudos em desenvolvimento de software, me proporciona uma visão ampla e integrada da tecnologia, desde o código até a rede onde ele é executado.
 
@@ -29,6 +29,7 @@ Profissionalmente, atuo no momento como estagiário na **Prefeitura Municipal**,
 - Bootstrap
 - Flask
 - FastAPI
+- Spring Boot
 
 ### Frontend
 - HTML
@@ -53,13 +54,14 @@ Profissionalmente, atuo no momento como estagiário na **Prefeitura Municipal**,
 - Google Colab
 - VirtualBox
 - Docker
+- Flyway
 
 ### Outros 
 - Pacote Office
 - Adobe InDesign / Illustrator
 - Oracle APEX
 - Inglês intermediário
-- Metodologia SCRUM
+- Metodologia SCRUM (Product Owner e Scrum Master)
 
 # 💼 Meus Projetos
 
@@ -256,4 +258,57 @@ O grande diferencial deste semestre foi trabalhar diretamente com um cliente ext
 </div>
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
   <img src="https://github.com/Bug-Busters-F/ClassiPy/blob/main/docs/gifs/gifSprint3.gif" alt="Home" width="65%">
+</div>
+
+---
+
+## 💼 ComissionAI - 2026 - 2º Semestre
+
+## Empresa Parceira  
+Neste projeto de conclusão de curso, nossa parceira foi a **Dom Rock**, empresa pioneira no desenvolvimento de soluções de inteligência artificial, engenharia de dados e automação de processos corporativos, representada pelo stakeholder **André F. de Almeida**.
+
+## Problema  
+A apuração e governança de comissões de vendas no ambiente empresarial frequentemente sofrem com a dispersão de dados, processos manuais suscetíveis a falhas e total falta de rastreabilidade. Regras contratuais complexas — como barreiras temporais de elegibilidade (evitar comissionamento indevido de vendas anteriores à admissão ou posteriores ao desligamento de colaboradores) — geram severos passivos trabalhistas e operacionais quando tratadas em planilhas isoladas. Além disso, a ausência de simulações orçamentárias preditivas impede que gestores avaliem com segurança o impacto financeiro de novas campanhas de incentivo antes de sua entrada em vigor.
+
+## Solução  
+Para solucionar essas dores, concebemos e desenvolvemos o **ComissionAI**, uma plataforma corporativa robusta voltada para a gestão, cálculo determinístico e simulação inteligente de comissões de vendas. O sistema integra um motor transacional de alta precisão em Java e Spring Boot com módulos de Inteligência Artificial Explicável (XAI) em Python, permitindo simular com antecedência cenários orçamentários (ex.: 80%, 100%, 120% e 150% da meta), detectar anomalias estatísticas diárias nas vendas e assegurar conformidade total através de trilhas imutáveis de auditoria e esteira de aprovação com congelamento de competências contábeis.
+
+## 🔗 Repositório  
+[ComissionAI (Bug Busters)](https://github.com/Bug-Busters-F/ComissionAI)
+
+## Tecnologias Utilizadas  
+- **Java 21 e Spring Boot 4** – Base do backend transacional, provendo endpoints RESTful de alta performance, serviços desacoplados e motor determinístico com precisão monetária estrita.
+- **PostgreSQL e Flyway** – Banco relacional corporativo com integridade referencial rigorosa, versionamento de schemas via migrações e índices parciais de unicidade para garantia de idempotência.
+- **Python e FastAPI** – Microsserviço de Inteligência Artificial para orquestração de simulações orçamentárias preditivas, calibragem de cenários e detecção estatística de anomalias.
+- **Vue.js e TypeScript** – Frontend reativo e moderno focado na esteira de aprovações de campanhas, transparência nas regras e exibição de relatórios detalhados.
+- **Docker e Docker Compose** – Padronização completa do ciclo de vida dos contêineres entre os ambientes de desenvolvimento e produção.
+- **Jira** – Gerenciamento ágil de histórias de usuário, critérios de aceite, refinamento técnico e backlog de sprints sob o framework Scrum.
+
+## Contribuições Pessoais  
+Neste projeto final, atuei em uma posição de liderança híbrida, dividindo minhas responsabilidades entre **Product Owner (PO)** e **Desenvolvedor Backend**:
+
+- **Como Product Owner**: Liderei o levantamento e refinamento de requisitos diretamente com o parceiro de negócio da Dom Rock. Estruturei e gerenciei o Product Backlog no Jira, formulando histórias de usuário com critérios de aceite objetivos, critérios de prontidão (*Definition of Ready - DoR*) e critérios de entrega (*Definition of Done - DoD*). Fui o elo estratégico na priorização das entregas das sprints, garantindo que a esteira de governança, os módulos de auditoria e o fechamento atendessem com fidelidade às necessidades contratuais e de compliance do cliente.
+- **Como Desenvolvedor Backend**: Fui o responsável pela arquitetura e implementação da primeira versão completa do motor de cálculo de comissões (`ComissaoService` e `TaxaComissaoResolver`). Estruturei a hierarquia de resolução de taxas com priorização de campanhas ativas (`tb_regra`) sobre a tabela base (`tb_basecomiss`) e implementei as travas de segurança temporal que validam a data da venda contra o período contratual ativo do colaborador. Desenvolvi a garantia de idempotência no banco de dados através de índices parciais únicos no PostgreSQL, tratei concorrência em nível de persistência (`DataIntegrityViolationException`), apliquei cálculo monetário seguro utilizando `BigDecimal` com arredondamento `HALF_UP` e construí os serviços de simulação orçamentária (`SimulacaoCenariosService`) e congelamento contábil de competências fechadas.
+
+## Hard Skills  
+
+| Habilidade | Descrição | Nível de Proficiência |
+|-------------|------------|-----------------------|
+| **Java 21 + Spring Boot** | Desenvolvimento de regras de negócio complexas, arquitetura em camadas e motor determinístico de cálculo. | Prático |
+| **PostgreSQL + Flyway** | Modelagem de dados, índices parciais únicos para idempotência e controle versionado de migrações. | Prático |
+| **Engenharia de Confiabilidade Financeira** | Cálculos monetários de alta precisão com `BigDecimal`, idempotência em concorrência e trilhas de auditoria imutáveis. | Prático |
+| **Python + Microsserviços** | Concepção de interfaces de integração entre o motor Java e os serviços de simulação preditiva de IA. | Prático |
+| **Git + GitHub** | Fluxo de Git Flow, resolução avançada de conflitos, branches temáticas e revisão minuciosa de PRs. | Proficiente |
+| **Product Ownership (Scrum)** | Gestão de backlog, alinhamento com stakeholders externos, refinamento ágil (DoR/DoD) e priorização orientada a valor. | Proficiente |
+
+## 💬 Soft Skills  
+Por ser o projeto de formatura e envolver um cliente de alto rigor corporativo (Dom Rock), o nível de maturidade exigido foi o mais elevado de todo o curso. Como **Product Owner**, aprimorei intensamente a **Negociação e Visão de Negócio**, sendo capaz de mediar as altas expectativas do cliente com a viabilidade técnica do time em sprints curtas. A **Liderança por Influência** e a **Comunicação Assertiva** foram vitais para manter a sinergia entre as frentes de Frontend, Backend e Inteligência Artificial, promovendo clareza quanto aos objetivos de entrega. Além disso, a **Gestão de Riscos e Tomada de Decisão sob Pressão** se mostraram fundamentais para reestruturar prontamente o motor de cálculo e os fluxos de fechamento diante de novos requisitos de auditoria e conformidade legal trazidos pelo cliente.
+
+## Demonstração do Projeto
+
+<div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
+  <!-- Adicionar demonstrações / GIFs da Sprint 1 e 2 aqui -->
+</div>
+<div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
+  <!-- Adicionar demonstrações / GIFs da Sprint 3 e 4 aqui -->
 </div>
