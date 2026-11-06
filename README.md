@@ -217,7 +217,7 @@ A manipulação de volumes massivos de dados foi uma grande barreira, exigindo *
 ## 📊 ClassiPy - 2025 - 2º Semestre
 
 ## Empresa Parceira  
-Nossa cliente neste projeto foi a **TecSys**, uma empresa especializada no ramo de aduana e logística que estava em busca de transformar tecnologicamente processos tributários e analíticos intensos.
+Nossa cliente neste projeto foi a **TecSys**, uma empresa especializada no ramo de tecnologia, eletrônica e telecomunicações que estava em busca de transformar tecnologicamente processos tributários e analíticos intensos.
 
 ## Problema  
 O processo tradicional para criar registros e minutas de importação no setor de eletrônicos depende de extenso trabalho braçal. Funcionários precisavam cruzar dados de documentos físicos (como o Part-Number das peças) com os NCMs, fabricantes e locais de origem correspondentes de maneira manual. Esse cenário não apenas gera lentidão, mas aumenta muito as chances de falha humana — erros que resultam em retenção de mercadorias pela Receita Federal, atrasando toda a cadeia de produção e gerando grandes multas para as empresas envolvidas.
