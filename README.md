@@ -316,17 +316,11 @@ O desenvolvimento de um módulo em tempo real (chat via WebSockets) para um apli
 ## Demonstração do Projeto
 
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
-  <video src="docs/5semestre%20sprint1.mp4" controls muted loop width="48%">
-    <a href="docs/5semestre%20sprint1.mp4">▶️ Demonstração Sprint 1 (ProDesk)</a>
-  </video>
-  <video src="docs/5%20semestre%20sprint%202.mp4" controls muted loop width="48%">
-    <a href="docs/5%20semestre%20sprint%202.mp4">▶️ Demonstração Sprint 2 (ProDesk)</a>
-  </video>
+  <img src="docs/5semestre_sprint1.gif" alt="Sprint 1 - ProDesk" width="45%">
+  <img src="docs/5semestre_sprint2.gif" alt="Sprint 2 - ProDesk" width="45%">
 </div>
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
-  <video src="docs/5semestre%20sprint3.mp4" controls muted loop width="65%">
-    <a href="docs/5semestre%20sprint3.mp4">▶️ Demonstração Sprint 3 (ProDesk)</a>
-  </video>
+  <img src="docs/5semestre_sprint3.gif" alt="Sprint 3 - ProDesk" width="45%">
 </div>
 
 ---
@@ -376,12 +370,8 @@ Por ser o projeto de formatura e envolver um cliente de alto rigor corporativo (
 ## Demonstração do Projeto
 
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
-  <video src="docs/6semestre%20sprint1.mp4" controls muted loop width="48%">
-    <a href="docs/6semestre%20sprint1.mp4">▶️ Demonstração Sprint 1 (ComissionAI)</a>
-  </video>
-  <video src="docs/6semestre%20sprint2.mp4" controls muted loop width="48%">
-    <a href="docs/6semestre%20sprint2.mp4">▶️ Demonstração Sprint 2 (ComissionAI)</a>
-  </video>
+  <img src="docs/6semestre_sprint1.gif" alt="Sprint 1 - ComissionAI" width="65%">
+  <img src="docs/6semestre_sprint2.gif" alt="Sprint 2 - ComissionAI" width="65%">
 </div>
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
   <!-- Adicionar demonstração da Sprint 3 aqui -->
