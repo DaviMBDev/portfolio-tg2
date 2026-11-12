@@ -217,7 +217,7 @@ A manipulação de volumes massivos de dados foi uma grande barreira, exigindo *
 ## 📊 ClassiPy - 2025 - 2º Semestre
 
 ## Empresa Parceira  
-Nossa cliente neste projeto foi a **TecSys**, uma empresa especializada no ramo de tecnologia, eletrônica e telecomunicações que estava em busca de transformar tecnologicamente processos tributários e analíticos intensos.
+Nossa cliente neste projeto foi a **TecSys**, uma empresa especializada no ramo de tecnologia, eletrônica e telecomunicações que estava em busca de transformar tecnologicamente processos tributários e analíticos intensos feitos dentro da empresa.
 
 ## Problema  
 O processo tradicional para criar registros e minutas de importação no setor de eletrônicos depende de extenso trabalho braçal. Funcionários precisavam cruzar dados de documentos físicos (como o Part-Number das peças) com os NCMs, fabricantes e locais de origem correspondentes de maneira manual. Esse cenário não apenas gera lentidão, mas aumenta muito as chances de falha humana — erros que resultam em retenção de mercadorias pela Receita Federal, atrasando toda a cadeia de produção e gerando grandes multas para as empresas envolvidas.
@@ -316,10 +316,17 @@ O desenvolvimento de um módulo em tempo real (chat via WebSockets) para um apli
 ## Demonstração do Projeto
 
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
-  <!-- Adicionar demonstrações / GIFs da Sprint 1 e 2 aqui -->
+  <video src="docs/5semestre%20sprint1.mp4" controls muted loop width="48%">
+    <a href="docs/5semestre%20sprint1.mp4">▶️ Demonstração Sprint 1 (ProDesk)</a>
+  </video>
+  <video src="docs/5%20semestre%20sprint%202.mp4" controls muted loop width="48%">
+    <a href="docs/5%20semestre%20sprint%202.mp4">▶️ Demonstração Sprint 2 (ProDesk)</a>
+  </video>
 </div>
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
-  <!-- Adicionar demonstrações / GIFs da Sprint 3 aqui -->
+  <video src="docs/5semestre%20sprint3.mp4" controls muted loop width="65%">
+    <a href="docs/5semestre%20sprint3.mp4">▶️ Demonstração Sprint 3 (ProDesk)</a>
+  </video>
 </div>
 
 ---
@@ -369,8 +376,13 @@ Por ser o projeto de formatura e envolver um cliente de alto rigor corporativo (
 ## Demonstração do Projeto
 
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
-  <!-- Adicionar demonstrações / GIFs da Sprint 1 e 2 aqui -->
+  <video src="docs/6semestre%20sprint1.mp4" controls muted loop width="48%">
+    <a href="docs/6semestre%20sprint1.mp4">▶️ Demonstração Sprint 1 (ComissionAI)</a>
+  </video>
+  <video src="docs/6semestre%20sprint2.mp4" controls muted loop width="48%">
+    <a href="docs/6semestre%20sprint2.mp4">▶️ Demonstração Sprint 2 (ComissionAI)</a>
+  </video>
 </div>
 <div style="display: flex; gap: 10px; margin-bottom: 10px; justify-content: center">
-  <!-- Adicionar demonstrações / GIFs da Sprint 3 e 4 aqui -->
+  <!-- Adicionar demonstração da Sprint 3 aqui -->
 </div>
